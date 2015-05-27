@@ -100,20 +100,20 @@
 
 	    			<form class="form-horizontal" action="update.php?id=<?php echo $id?>" method="post">
 
-	    				   <div class="control-group <?php echo !empty($departmentError)?'error':'';?>">
+	    				  <div class="control-group <?php echo !empty($departmentError)?'error':'';?>">
 						    <label class="control-label">Department Name</label>
 						     <div class="controls">
-						      	<input name="email" type="text" placeholder="Email Address" value="<?php echo !empty($teacher)?$teacher:'';?>" disabled>
-						      	<?php if (!empty($teacherError)): ?>
-						      		<span class="help-inline"><?php echo $teacherError;?></span>
+						      	<input name="email" type="text" placeholder="Department" value="<?php echo !empty($department)?$department:'';?>" disabled>
+						      	<?php if (!empty($departmentError)): ?>
+						      		<span class="help-inline"><?php echo $departmentError;?></span>
 						      	<?php endif; ?>
-						    </div>
-						    <label class="control-label">Teacher</label>
+						      </div>
+						   </div>
 
 						  <div class="control-group <?php echo !empty($teacherError)?'error':'';?>">
 						    <label class="control-label">Teacher</label>
 						    <div class="controls">
-						      	<input name="email" type="text" placeholder="Email Address" value="<?php echo !empty($teacher)?$teacher:'';?>" disabled>
+						      	<input name="email" type="text" placeholder="Teacher" value="<?php echo !empty($teacher)?$teacher:'';?>" disabled>
 						      	<?php if (!empty($teacherError)): ?>
 						      		<span class="help-inline"><?php echo $teacherError;?></span>
 						      	<?php endif; ?>
@@ -146,7 +146,7 @@
 					    <div class="control-group <?php echo !empty($reasonError)?'error':'';?>">
 						    <label class="control-label">Reason</label>
 						    <div class="controls">
-						      	<textarea name="reason" placeholder="Address" rows="5" cols="80" value="<?php echo !empty($reason)?$reason:'';?>" disabled></textarea>
+						      	<textarea name="reason" placeholder="Reason" rows="5" cols="80" disabled><?php echo !empty($reason)?$reason:'';?></textarea>
 						      	<?php if (!empty($reasonError)): ?>
 						      		<span class="help-inline"><?php echo $reasonError;?></span>
 						      	<?php endif;?>

@@ -28,6 +28,7 @@
 		                  <th>Teacher</th>
 		                  <th>Email Address</th>
 		                  <th>Amount</th>
+		                  <th>Reason</th>
 		                  <th>Status</th>
 		                  <th>Action</th>
 		                </tr>
@@ -43,6 +44,7 @@
 							   	echo '<td>'. $row['teacher'] . '</td>';
 							   	echo '<td>'. $row['email'] . '</td>';
 							   	echo '<td>'. $row['amount'] . '</td>';
+							   	echo '<td>'. $row['reason'] . '</td>';
 							   	echo '<td>'. $row['status'] . '</td>';
 							   	echo '<td width=250>';
 							   	//echo '<a class="btn" href="read.php?id='.$row['id'].'">Read</a>';
