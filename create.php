@@ -2,7 +2,7 @@
 	
 	require 'database.php';
 	
-	if ( !empty($_POST)) {
+	if ( !empty($_POST) ) {
 		// keep track validation errors
 		$departmentError = null;
 		$teacherError = null;
@@ -22,18 +22,17 @@
 		// validate input
 
 		if (empty($department)) {
-			$departmentError = 'Please enter Department Name';
+			$departmentError = 'Please select Department Name';
 			$valid = false;
 		}
 
-		$valid = true;
 		if (empty($teacher)) {
-			$teacherError = 'Please enter teacher';
+			$teacherError = 'Please select a Teacher';
 			$valid = false;
 		}
 		
 		if (empty($email)) {
-			$emailError = 'Please enter Email Address';
+			$emailError = 'Please enter a Email Address';
 			$valid = false;
 		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
 			$emailError = 'Please enter a valid Email Address';
@@ -72,7 +71,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <link   href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
 </head>
@@ -131,8 +130,8 @@
 					  <div class="control-group <?php echo !empty($teacherError)?'error':'';?>">
 					    <label class="control-label">Teacher</label>
 					    <div class="controls">
-					    <select>
-					    	<option value="#" disabled>Select...</option>
+					    <select name="teacher">
+					    	<option value="#">Select...</option>
 							  <option value="Mr.Marc Morris">Mr.Marc Morris</option>
 							  <option value="Mr.Neil Hodgson">Mr.Neil Hodgson</option>
 							  <option value="Mr.Greg Thornton">Mr.Greg Thornton</option>
