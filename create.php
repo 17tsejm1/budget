@@ -20,6 +20,8 @@
 		$reason = $_POST['reason'];
 		
 		// validate input
+		
+		$valid = true;
 
 		if (empty($department)) {
 			$departmentError = 'Please select Department Name';

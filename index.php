@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link   href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
 </head>
 
@@ -11,10 +12,6 @@
     		<div class="row">
     			<h3>Budget Allocation System</h3>
     		</div>
-
-    		
-			
-
 			<div class="row">
 
 				<p>
@@ -60,10 +57,11 @@
 				      </tbody>
 	            </table>
     	</div>
-
-    	<div class="logo">
-    			<center><img width="100px"src="img/stc.png"></center>
-    	</div>
+    	
+    	<div id="logo">
+    		<img src="img/stc.jpg">
+    	</div>		
+    		
 
     </div> <!-- /container -->
   </body>

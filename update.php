@@ -75,7 +75,7 @@
 
 	var password;
 
-	var pass1="letmein";
+	var pass1=<? echo $_ENV["password"]; ?>
 
 	password=prompt('Please enter your password to view this page!',' ');
 
